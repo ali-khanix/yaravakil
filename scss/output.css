@@ -101,11 +101,11 @@ html {
 body {
   font-family: "iran yekan", sans-serif;
   background-color: var(--color-body-bg);
+  direction: rtl;
 }
 
 a {
   text-decoration: none;
-  color: var(--color-primary);
 }
 
 ul {
@@ -113,7 +113,124 @@ ul {
 }
 
 .wrapper {
-  padding: 3.2rem 7rem;
+  padding: 2rem 12rem;
+}
+
+.section-hero {
+  padding: 2rem 0;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 2.25fr 0.78fr;
+  gap: 2rem;
+}
+
+.right-column {
+  position: relative;
+}
+
+.right-column img {
+  width: 100%;
+}
+
+.right-column-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  position: absolute;
+  top: 50%;
+  padding-right: 10rem;
+  transform: translateY(-50%);
+  color: white;
+}
+
+.right-column-content h1 {
+  font-size: 3.4rem;
+  width: 60%;
+  line-height: 1.4;
+}
+
+.right-column-content p {
+  font-size: 2.4rem;
+  width: 60%;
+  color: var(--color-gray-400);
+}
+
+.right-column-content a {
+  color: white;
+}
+
+.right-column .cta-btn {
+  color: red;
+  font-size: 2rem;
+}
+
+.left-column {
+  width: 100%;
+  background-color: #bfbfbf;
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.3);
+}
+
+.right-img {
+  height: 100%;
+}
+
+.left-img {
+  width: 100%;
+  height: 50%;
+}
+
+.news-content {
+  padding: 3rem 1rem;
+}
+
+.news-content h3 {
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+.left-column .sub-heading {
+  padding-top: 3rem;
+  font-size: 1.6rem;
+}
+
+.sub-heading a {
+  color: red;
+  font-weight: 700;
+}
+
+/********** FEATURES *********/
+.section-features {
+  margin-top: 8rem;
+  letter-spacing: -0.5px;
+}
+
+.heading-secodary {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  text-align: center;
+}
+
+.cards-container {
+  display: flex;
+  gap: 4rem;
+  padding-top: 4rem;
+}
+
+.card {
+  background-color: var(--color-primary);
+  text-align: center;
+  padding: 2rem;
+}
+
+.card .heading {
+  color: var(--color-gray-100);
+}
+
+.card .sub-heading {
+  color: var(--color-gray-400);
 }
 
 /*# sourceMappingURL=output.css.map */

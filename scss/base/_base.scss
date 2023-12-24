@@ -33,11 +33,11 @@ html {
 body {
   font-family: "iran yekan", sans-serif;
   background-color: var(--color-body-bg);
+  direction: rtl;
 }
 
 a {
   text-decoration: none;
-  color: var(--color-primary);
 }
 
 ul {
@@ -45,5 +45,5 @@ ul {
 }
 
 .wrapper {
-  padding: 3.2rem 7rem;
+  padding: 2rem 12rem;
 }
