@@ -206,6 +206,10 @@ ul {
   letter-spacing: -0.5px;
 }
 
+.features {
+  width: 100%;
+}
+
 .heading-secodary {
   font-size: 2.6rem;
   font-weight: 700;
@@ -214,7 +218,10 @@ ul {
 }
 
 .cards-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  width: 100%;
   gap: 4rem;
   padding-top: 4rem;
 }
@@ -223,6 +230,7 @@ ul {
   background-color: var(--color-primary);
   text-align: center;
   padding: 2rem;
+  height: 22rem;
 }
 
 .card .heading {
@@ -231,6 +239,8 @@ ul {
 
 .card .sub-heading {
   color: var(--color-gray-400);
+  width: 60%;
+  text-align: center;
 }
 
 /*# sourceMappingURL=output.css.map */
