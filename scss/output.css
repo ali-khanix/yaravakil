@@ -19,6 +19,21 @@
   src: url(../../font/IRANYekanBoldFaNum.ttf);
   font-weight: 700;
 }
+@font-face {
+  font-family: "iran yekan";
+  src: url(../../font/IRANYekanExtraBoldFaNum.ttf);
+  font-weight: 800;
+}
+@font-face {
+  font-family: "iran yekan";
+  src: url(../../font/IRANYekanBlackFaNum.ttf);
+  font-weight: 900;
+}
+@font-face {
+  font-family: "iran yekan";
+  src: url(../../font/IRANYekanExtraBlackFaNum.ttf);
+  font-weight: 950;
+}
 header .logo {
   width: 60px;
   height: 60px;
@@ -28,6 +43,7 @@ header a {
   font-weight: 700;
   font-size: 1.6rem;
   transition: 0.3s;
+  color: var(--color-primary);
 }
 
 header {
@@ -92,6 +108,7 @@ header .yara {
   --color-gray-800: #1f2937;
   --color-gray-900: #111827;
   --color-gray-950: #030712;
+  --box-shadow: 2px 2px 5px 1px rgb(0, 0, 0, 0.3);
 }
 
 html {
@@ -114,6 +131,21 @@ ul {
 
 .wrapper {
   padding: 2rem 12rem;
+}
+
+.sub-heading {
+  font-size: 1.6rem;
+}
+
+.heading-secondary {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.heading-tertiary {
+  font-size: 2.4rem;
+  font-weight: 500;
 }
 
 .section-hero {
@@ -161,7 +193,8 @@ ul {
   color: white;
 }
 
-.right-column .cta-btn {
+.right-column a {
+  font-weight: 700;
   color: red;
   font-size: 2rem;
 }
@@ -169,7 +202,7 @@ ul {
 .left-column {
   width: 100%;
   background-color: #bfbfbf;
-  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: var(--box-shadow);
 }
 
 .right-img {
@@ -202,7 +235,7 @@ ul {
 
 /********** FEATURES *********/
 .section-features {
-  margin-top: 8rem;
+  margin-top: 10rem;
   letter-spacing: -0.5px;
 }
 
@@ -210,10 +243,7 @@ ul {
   width: 100%;
 }
 
-.heading-secodary {
-  font-size: 2.6rem;
-  font-weight: 700;
-  color: var(--color-primary);
+.features h2 {
   text-align: center;
 }
 
@@ -229,18 +259,87 @@ ul {
 .card {
   background-color: var(--color-primary);
   text-align: center;
+  width: 100%;
   padding: 2rem;
-  height: 22rem;
+  min-height: 25rem;
+  border-top: 0.5rem solid var(--color-tertiary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  cursor: pointer;
+  box-shadow: var(--box-shadow);
+}
+
+.card img {
+  height: 5rem;
+  transform: translateX(6px);
 }
 
 .card .heading {
+  font-size: 1.8rem;
+  font-weight: 700;
   color: var(--color-gray-100);
 }
 
 .card .sub-heading {
   color: var(--color-gray-400);
-  width: 60%;
   text-align: center;
+}
+
+/***********************************/
+/********** HOW IT WORKS *********/
+/***********************************/
+.section-how_it_works {
+  margin-top: 16rem;
+}
+
+.how-it-works h2 {
+  text-align: center;
+}
+
+.step-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 5rem;
+  margin-top: 4rem;
+}
+
+.step__content {
+  width: 100%;
+  height: 100%;
+}
+
+.step__content h3 {
+  font-weight: 700;
+}
+
+.sub-heading-container {
+  color: var(--color-gray-800);
+  padding: 2rem 2rem 0 0;
+}
+
+.sub-heading-container strong {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--color-gray-900);
+}
+
+.sub-heading-container p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--color-gray-800);
+  line-height: 1.7;
+}
+
+.step__img {
+  width: 100%;
+}
+
+.step__img img {
+  width: 90%;
 }
 
 /*# sourceMappingURL=output.css.map */

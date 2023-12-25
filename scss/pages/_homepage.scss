@@ -42,10 +42,10 @@
   color: white;
 }
 
-.right-column .cta-btn {
+.right-column a {
   // background-color: var(--color-tertiary);
   // color: var(--color-primary) !important;
-  // font-weight: 700;
+  font-weight: 700;
   color: red;
   font-size: 2rem;
 }
@@ -53,7 +53,7 @@
 .left-column {
   width: 100%;
   background-color: #bfbfbf;
-  box-shadow: 2px 2px 5px 1px rgb(0, 0, 0, 0.3);
+  box-shadow: var(--box-shadow);
 }
 
 .right-img {
@@ -86,7 +86,7 @@
 
 /********** FEATURES *********/
 .section-features {
-  margin-top: 8rem;
+  margin-top: 10rem;
   letter-spacing: -0.5px;
 }
 
@@ -94,10 +94,7 @@
   width: 100%;
 }
 
-.heading-secodary {
-  font-size: 2.6rem;
-  font-weight: 700;
-  color: var(--color-primary);
+.features h2 {
   text-align: center;
 }
 
@@ -113,16 +110,88 @@
 .card {
   background-color: var(--color-primary);
   text-align: center;
+  width: 100%;
 
   padding: 2rem;
-  height: 22rem;
+  min-height: 25rem;
+
+  border-top: 0.5rem solid var(--color-tertiary);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  cursor: pointer;
+
+  box-shadow: var(--box-shadow);
+}
+
+.card img {
+  height: 5rem;
+  transform: translateX(6px);
 }
 
 .card .heading {
+  font-size: 1.8rem;
+  font-weight: 700;
   color: var(--color-gray-100);
 }
 .card .sub-heading {
   color: var(--color-gray-400);
-  width: 60%;
   text-align: center;
+}
+
+/***********************************/
+/********** HOW IT WORKS *********/
+/***********************************/
+
+.section-how_it_works {
+  margin-top: 16rem;
+}
+
+.how-it-works h2 {
+  text-align: center;
+}
+
+.step-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 5rem;
+
+  margin-top: 4rem;
+}
+
+.step__content {
+  width: 100%;
+  height: 100%;
+}
+
+.step__content h3 {
+  font-weight: 700;
+}
+
+.sub-heading-container {
+  color: var(--color-gray-800);
+  padding: 2rem 2rem 0 0;
+}
+
+.sub-heading-container strong {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--color-gray-900);
+}
+.sub-heading-container p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--color-gray-800);
+  line-height: 1.7;
+}
+.step__img {
+  width: 100%;
+}
+
+.step__img img {
+  width: 90%;
 }
