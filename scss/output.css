@@ -96,6 +96,8 @@ header .yara {
   --color-primary: #012c5b;
   --color-primary-darker: #010813;
   --color-tertiary: #fffb4c;
+  --color-tertiary-darker: #b3b040;
+  --color-tertiary-lighter: #fffc8d;
   --color-body-bg: #dbdbdb;
   --color-gray-50: #f9fafb;
   --color-gray-100: #f3f4f6;
@@ -109,6 +111,7 @@ header .yara {
   --color-gray-900: #111827;
   --color-gray-950: #030712;
   --box-shadow: 2px 2px 5px 1px rgb(0, 0, 0, 0.3);
+  --transition-3s: 0.3s;
 }
 
 html {
@@ -169,7 +172,7 @@ ul {
 .right-column-content {
   display: flex;
   flex-direction: column;
-  gap: 1.6rem;
+  gap: 2rem;
   position: absolute;
   top: 50%;
   padding-right: 10rem;
@@ -194,9 +197,17 @@ ul {
 }
 
 .right-column a {
-  font-weight: 700;
-  color: red;
-  font-size: 2rem;
+  background-color: var(--color-tertiary);
+  color: var(--color-primary);
+  font-weight: 800;
+  font-size: 1.6rem;
+  padding: 0.8rem 2rem;
+  border-radius: 3rem;
+  transition: var(--transition-3s);
+}
+
+.right-column a:hover {
+  background-color: var(--color-tertiary-darker);
 }
 
 .left-column {
@@ -402,6 +413,142 @@ ul {
 .column-left a:hover {
   background-color: var(--color-tertiary);
   color: var(--color-primary);
+}
+
+/***********************************/
+/********** TESTIMONIALS *********/
+/***********************************/
+.section-testimonials {
+  margin-top: 16rem;
+}
+
+.testimonials-cards {
+  display: flex;
+  gap: 4rem;
+}
+
+.test-card {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  background-color: #e1e1e1;
+  padding: 2rem;
+}
+
+.stars {
+  display: flex;
+  gap: 1rem;
+  font-size: 2.2rem;
+}
+
+.stars .fa-star {
+  color: #ffc200;
+  cursor: pointer;
+}
+
+.stars .fa-star:last-child {
+  color: #a8a8a8;
+}
+
+.comment-container p {
+  color: #475057;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 3rem;
+}
+
+.avatar img {
+  border-radius: 100%;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.profile-name {
+  font-size: 1.6rem;
+  color: var(--color-gray-900);
+  font-weight: 500;
+}
+
+.profie-date {
+  font-size: 1.2rem;
+  color: #475057;
+}
+
+/***********************************/
+/********** CTA *********/
+/***********************************/
+.section-cta {
+  margin-top: 16rem;
+}
+
+.cta-container {
+  background-color: var(--color-primary);
+  text-align: center;
+  padding: 8rem 0;
+}
+
+.cta-container .heading-secondary {
+  color: #fff;
+}
+
+.cta-container .sub-heading {
+  color: var(--color-gray-400);
+}
+
+.btn {
+  background-color: var(--color-tertiary);
+  color: var(--color-primary);
+  padding: 0.8rem 2rem;
+  display: inline-block;
+  font-weight: 800;
+  font-size: 1.6rem;
+}
+
+.btn.cta {
+  margin: 2rem auto;
+  border-radius: 3rem;
+  transition: var(--transition-3s);
+}
+
+.btn.cta:hover {
+  background-color: var(--color-tertiary-darker);
+}
+
+/***********************************/
+/********** FOOTER *********/
+/***********************************/
+.section-footer {
+  margin-top: 16rem;
+}
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer div {
+  width: 100%;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+footer ul a {
+  font-size: 1.6rem;
+  color: var(--color-primary);
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=output.css.map */
