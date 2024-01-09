@@ -532,7 +532,7 @@ ul {
 
 footer {
   display: grid;
-  align-items: center;
+  align-items: start;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 3rem;
 }
@@ -541,6 +541,8 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer__nav-link {
@@ -577,6 +579,17 @@ footer {
 .footer__info {
   display: flex;
   flex-direction: column;
+  gap: 2rem;
+  font-size: 1.6rem;
+}
+
+.footer__social-icons {
+  color: var(--color-primary);
+  display: flex;
+  flex-direction: row;
+  font-size: 3rem;
+  gap: 2rem;
+  justify-content: flex-start;
 }
 
 @media screen and (max-width: 1487px) {
@@ -596,6 +609,77 @@ footer {
   /*****WHY US*****/
   .why-us-container .heading-secondary {
     width: 65%;
+  }
+}
+@media screen and (max-width: 1278px) {
+  .why-us-container .heading-secondary {
+    width: 80%;
+  }
+  .why-us-container p {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 1025px) {
+  .container.hero {
+    padding: 0;
+  }
+  .hero {
+    display: flex;
+    flex-direction: column;
+  }
+  .right-column {
+    position: relative;
+    height: 50rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .right-column img {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+  }
+  .right-column-content {
+    gap: 2rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-right: 0;
+  }
+  .hero-cta {
+    width: 50%;
+  }
+  .hero-cta .cta-btn {
+    display: block;
+  }
+  .left-column {
+    /* width: 100%; */
+    background-color: transparent;
+    box-shadow: none;
+    text-align: center;
+  }
+  .left-column img {
+    width: auto;
+  }
+  .cards-container {
+    display: flex;
+    justify-content: center;
+    width: 75%;
+    gap: 3rem;
+    padding-top: 4rem;
+    flex-direction: column;
+    margin: auto;
+  }
+  .step-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    margin-top: 6rem;
+    border: 1px solid var(--color-primary);
+    padding: 1rem;
+  }
+  #step-two {
+    flex-direction: column-reverse;
   }
 }
 
