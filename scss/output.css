@@ -625,7 +625,18 @@ footer {
 }
 @media screen and (max-width: 1025px) {
   .menu-active {
-    right: 0;
+    right: 0 !important;
+  }
+  .nav-list {
+    transition: 0.5s;
+  }
+  #multiply-icon {
+    color: white;
+    font-size: 3rem;
+    padding-top: 2rem;
+  }
+  #bars-icon {
+    color: var(--color-primary);
   }
   .container.header {
     padding: 0;
